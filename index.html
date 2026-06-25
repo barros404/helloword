@@ -45,13 +45,37 @@
             <!-- Um botão de exemplo (link estilizado) -->
             <a class="botao" href="#">Vamos começar!</a>
 
+            <!-- ============================================
+                 ÁREA INTERATIVA (controlada pelo JavaScript)
+                 Cada botão abaixo é "escutado" pelo arquivo
+                 js/script.js para reagir ao clique.
+                 ============================================ -->
+            <div class="area-js">
+                <h3>Brincando com JavaScript 🚀</h3>
+
+                <!-- Exemplo: contador de cliques -->
+                <p id="contador">Cliques: 0</p>
+                <button type="button" id="botao-contar" class="botao-js">Clique para contar</button>
+
+                <!-- Exemplo: trocar o tema claro/escuro -->
+                <button type="button" id="botao-tema" class="botao-js">Mudar tema 🌙</button>
+
+                <!-- Exemplo: saudação personalizada -->
+                <button type="button" id="botao-saudacao" class="botao-js">Diga seu nome 👋</button>
+                <p id="saudacao"></p>
+            </div>
+
         </section>
     </main>
 
     <!-- Rodapé da página -->
     <footer>
-        <p>Aula de HTML &amp; CSS — feito com 💙 por António Barros</p>
+        <p>Aula de HTML, CSS &amp; JS — feito com 💙 por António Barros</p>
     </footer>
+
+    <!-- Ligação com o arquivo de comportamento (JavaScript).
+         Fica no final do <body> para o HTML carregar primeiro. -->
+    <script src="js/script.js"></script>
 
 </body>
 

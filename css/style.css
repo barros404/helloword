@@ -117,6 +117,76 @@ h2 {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* =======================================================
+   ÁREA INTERATIVA DO JAVASCRIPT
+   ======================================================= */
+
+/* Caixa que separa os exemplos de JS do resto */
+.area-js {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px dashed #ddd;   /* linha tracejada separando */
+}
+
+.area-js h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* O texto do contador e da saudação */
+#contador,
+#saudacao {
+    font-size: 16px;
+    font-weight: bold;
+    color: #6a82fb;
+    margin: 10px 0;
+    min-height: 20px;              /* evita "pulo" quando aparece o texto */
+}
+
+/* Botões controlados pelo JavaScript */
+.botao-js {
+    cursor: pointer;              /* mãozinha ao passar o mouse */
+    border: none;
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.botao-js:hover {
+    background-color: #6a82fb;
+    transform: translateY(-2px);
+}
+
+/* =======================================================
+   TEMA ESCURO
+   Esta classe é adicionada/removida pelo JavaScript
+   quando o aluno clica no botão "Mudar tema".
+   ======================================================= */
+body.tema-escuro {
+    background: #1e1e2f;          /* fundo escuro */
+}
+
+body.tema-escuro .cartao {
+    background-color: #2a2a3d;    /* cartão escuro */
+    color: #f0f0f0;
+}
+
+body.tema-escuro h1,
+body.tema-escuro h2,
+body.tema-escuro .area-js h3 {
+    color: #ffffff;
+}
+
+body.tema-escuro .descricao,
+body.tema-escuro .lista li {
+    color: #cccccc;
+}
+
 /* Rodapé */
 footer {
     margin-top: 25px;
